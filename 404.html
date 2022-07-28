@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Redirecting to https://stimulus.hotwired.dev/</title>
+<link rel="canonical" href="https://stimulus.hotwired.dev/">
+<script>
+    const baseUrl = "https://stimulus.hotwired.dev";
+    let path = window.location.pathname;
+    if (window.location.search) {
+        path = `${path}${window.location.search}`;
+    }
+
+    window.location.assign(`${baseUrl}${path}`);
+</script>
+<noscript>
+    This site requires Javascript to redirect to <a href="https://stimulus.hotwired.dev/">the primary site.</a>
+</noscript>
