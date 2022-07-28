@@ -9,6 +9,10 @@
         path = `${path}${window.location.search}`;
     }
 
+    if (window.location.hash) {
+        path = `${path}${window.location.hash}`;
+    }
+
     window.location.assign(`${baseUrl}${path}`);
 </script>
 <noscript>
